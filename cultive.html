@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cultive</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e1f7ea;
+            font-family: Arial, sans-serif;
+        }
+        .frame-container {
+            position: relative;
+            width: 345px;
+            height: 750px;
+            margin-left: 2rem;
+        }
+        iframe {
+            position: absolute;
+            margin-top: 4%;
+            margin-left: 3.8%;
+            width: 92%;
+            height: 96%;
+            border: none;
+            z-index: 2;
+            border-radius: 30px;
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .instructions-container {
+            width: 40%;
+            padding: 2rem;
+            margin-right: 100px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="instructions-container">
+        <h2>Instruções do protótipo:</h2>
+        <p><strong>Tela 1:</strong> O aplicativo começa buscando conexão com o irrigador. Há um botão que localizará o irrigador por meio de interceptação de mensagens Broadcast UDP.</p>
+        <p><strong>Tela 2:</strong> Será exibida a tela inicial do irrigador, onde o usuário pode clicar nos IconButtons de lápis para alterar o nome de seu irrigador (funcional). Além disso, clicando no IconButton do gasto, o usuário define a quantidade de água por irrigação (funcional). O botão de planejamento redireciona o usuário para a página de planejamento de irrigação. Já o botão de configurações redireciona para a tela de configuração.</p>
+        <p><strong>Tela 3:</strong> Na tela de planejamento, o usuário definirá os dias da semana em que o irrigador regará a planta e o horário (funcional, mas ainda não salva, pois não há um banco de dados).</p>
+        <p><strong>Tela 4:</strong> Na tela de configuração, será possível criar um novo irrigador e remover outros.</p>
+        <p><strong>Tela 5:</strong> Tela de adição de um novo irrigador. O usuário clicará no botão de conectar ao irrigador que fará o mesmo método da tela 1. Além disso, o usuário definirá a foto e o nome do irrigador. Também será possível alternar entre os irrigadores.</p>
+        
+        <p><strong>OBS:</strong> Ainda não é possível alterar fotos, pois o protótipo ainda não tem onde salvá-las.</p>
+        
+    </div>
+    <div class="frame-container">
+        <iframe src="https://cultivekickoff.web.app/#/"></iframe>
+        <img src="samsung-galaxy-s20-medium.png" alt="Phone frame">
+    </div>
+</body>
+</html>
